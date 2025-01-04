@@ -1,7 +1,17 @@
-#+TITLE: Index
-
-- [[file:README.org][README]]
-- orgs
-  - [[file:orgs/index.org][index]]
-  - posts
-    - [[file:orgs/posts/2009-11-26-my-first-post.org][2009-11-26-my-first-post]]
+---
+layout: default
+title: My Page Title.
+---
+#+begin_export html
+<ul class="posts">
+{% for post in site.posts limit: 5 %}
+  <div class="post_info">
+    <li>
+	    <a href="{{ post.url }}">{{ post.title }}</a>
+	    <span>({{ post.date | date:"%Y-%m-%d" }})</span>
+    </li>
+    </br> <em>{{ post.excerpt }} </em>
+    </div>
+  {% endfor %}
+</ul>
+#+end_export

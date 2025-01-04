@@ -29,7 +29,7 @@
              :recursive t
              :base-directory "~/Sites/math-site/orgs/"
              :publishing-function 'org-html-publish-to-html
-             :publishing-directory "~/Sites/math-site/docs"
+             :publishing-directory "~/Sites/math-site/"
 	     :body-only t
 	     :with-toc nil)           
        ))   
