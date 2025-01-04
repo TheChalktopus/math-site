@@ -1,4 +1,0 @@
-#+TITLE: Index
-
-- _posts
-  - [[file:_posts/2009-11-26-my-first-post.org][2009-11-26-my-first-post]]
