@@ -1,8 +1,9 @@
+#+begin_export html
 ---
 layout: default
 title: My Page Title.
 ---
-#+begin_export html
+
 <ul class="posts">
 {% for post in site.posts limit: 5 %}
   <div class="post_info">
