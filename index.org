@@ -1,0 +1,7 @@
+#+TITLE: Index
+
+- [[file:README.org][README]]
+- orgs
+  - [[file:orgs/index.org][index]]
+  - _posts
+    - [[file:orgs/_posts/2009-11-26-my-first-post.org][2009-11-26-my-first-post]]

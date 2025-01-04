@@ -24,35 +24,17 @@
 
 ;; Define the publishing project
 (setq org-publish-project-alist
-      '(
-
-  ("org-ak"
-          ;; Path to your org files.
-          :base-directory "~/Sites/math-site/org/"
-          :base-extension "org"
-	  :sitemap-filename "index.org"
-	  :sitemap-title   "Index"
-
-          ;; Path to your Jekyll project.
-          :publishing-directory "~/Sites/math-site/docs/"
-          :recursive t
-          :publishing-function org-publish-org-to-html
-          :headline-levels 4
-          :html-extension "html"
-          :body-only t ;; Only export section between <body> </body>
-    )
-
-
-    ("org-static-ak"
-          :base-directory "~/Sites/math-site/org/"
-          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
-          :publishing-directory "~/Sites/math-site/"
-          :recursive t
-          :publishing-function org-publish-attachment)
-
-    ("ak" :components ("org-ak" "org-static-ak"))
-
-))
+      (list
+       (list "org-site:main"
+             :recursive t
+             :base-directory "~/Sites/math-site/"
+             :publishing-function 'org-html-publish-to-html
+             :publishing-directory "~/Sites/math-site/docs"
+	     :auto-sitemap t
+	     :sitemap-filename "index.org"
+	     :sitemap-title   "Index"
+	     :body-only t)           
+       ))   
 ;; Generate the site output
 (org-publish-all t)
 
