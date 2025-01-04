@@ -32,7 +32,8 @@
              :publishing-directory "~/Sites/math-site/"
 	     :body-only t
 	     :with-toc nil)           
-       ))   
+       ))
+(setq org-export-with-section-numbers nil)
 ;; Generate the site output
 (org-publish-all t)
 
