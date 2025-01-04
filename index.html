@@ -7,7 +7,7 @@ title: Home
 {% for post in site.posts limit: 5 %}
   <div class="post_info">
     <li>
-	    <a href="/math-site/"{{ post.url }}>{{ post.title }}</a>
+	    <a href="/math-site/">{{ post.title }}</a>
 	    <span>({{ post.date | date:"%Y-%m-%d" }})</span>
     </li>
     </br> <em>{{ post.excerpt }} </em>
