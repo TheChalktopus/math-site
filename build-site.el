@@ -33,7 +33,8 @@
 	     :auto-sitemap t
 	     :sitemap-filename "index.org"
 	     :sitemap-title   "Index"
-	     :body-only t)           
+	     :body-only t
+	     :with-toc nil)           
        ))   
 ;; Generate the site output
 (org-publish-all t)
