@@ -30,6 +30,8 @@
           ;; Path to your org files.
           :base-directory "~/Sites/math-site/org/"
           :base-extension "org"
+	  :sitemap-filename "index.org"
+	  :sitemap-title   "Index"
 
           ;; Path to your Jekyll project.
           :publishing-directory "~/Sites/math-site/docs/"
