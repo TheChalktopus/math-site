@@ -7,7 +7,7 @@ title: My Page Title.
 {% for post in site.posts limit: 5 %}
   <div class="post_info">
     <li>
-	    <a href="%Y-%m-%d">{{ post.title }}</a>
+	    <a href={{ post.url }}>{{ post.title }}</a>
 	    <span>({{ post.date | date:"%Y-%m-%d" }})</span>
     </li>
     </br> <em>{{ post.excerpt }} </em>
