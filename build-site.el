@@ -27,7 +27,7 @@
       (list
        (list "org-site:main"
              :recursive t
-             :base-directory "~/Sites/math-site/"
+             :base-directory "~/Sites/math-site/orgs/"
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "~/Sites/math-site/docs"
 	     :auto-sitemap t
