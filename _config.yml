@@ -1,4 +1,4 @@
-title: Your awesome title
+title: Attempting to Learn Math
 author:
   name: Abby Kinney
   email: abbykinney17@gmail.com
@@ -29,8 +29,9 @@ plugins:
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - about.html
+  - posts.html
   - courses.html
+  - about.html
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
